@@ -18,7 +18,7 @@
     - 행렬 A만큼 스칼라 값이 확대된 뒤 연산되는 기능
 - 원소 접근
     - .platten(): 행렬을 1차원 배열로 변환(평탄화)
-    - Numpy 배열에 부등호 연산자 사용하면 - Bool 배열로 Return
+    - Numpy 배열에 부등호 연산자 사용하면 - Bool 배열로 Return<br>
 ### matplotlib
 - matplotlib: 그래프 그리기용 라이브러리
     - pyplot: 단순한 그래프 그리기<br>
@@ -29,7 +29,7 @@
     import matplotlib.pyplot<br>
     from matplotlib.image import imread<br>
     img = imread('이미지 경로)<br>
-    plt.imshow(img)
+    plt.imshow(img)<br>
 ### 정리
 - 사용 언어: Python 3
 - 사용 라이브러리: Numpy, matplotlib(둘 다 Anaconda에 존재)
