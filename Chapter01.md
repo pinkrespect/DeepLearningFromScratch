@@ -29,7 +29,7 @@
     import matplotlib.pyplot<br>
     from matplotlib.image import imread<br>
     img = imread('이미지 경로)<br>
-    plt.imshow(img)<br>
+    plt.imshow(img)<p>
 ### 정리
 - 사용 언어: Python 3
 - 사용 라이브러리: Numpy, matplotlib(둘 다 Anaconda에 존재)
