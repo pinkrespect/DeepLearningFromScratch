@@ -36,4 +36,4 @@
 - 사용 언어: Python 3
 - 사용 라이브러리: Numpy, matplotlib(둘 다 Anaconda에 존재)
 - Numpy에서 다차원 배열 사용 방법 알기
-- matplotlib에서 그래프 그리는 법 알기
+- matplotlib에서 그래프 그리는 법 알기<br>
