@@ -1,0 +1,17 @@
+# Chatper 03 Neural network
+
+## Batch size defines number of samples that going to be propagated through the network
+
+### [Stack Over Flow - What is batch size in neural network](http://stats.stackexchange.com/questions/153531/what-is-batch-size-in-neural-network)
+
+For instance, let's say you have 1050 training samples and you want to set up batch_size equal to 100. Algorithm takes first 100 samples (from 1st to 100th) from the training dataset and trains network. Next it takes second 100 samples (from 101st to 200th) and train network again. We can keep doing this procedure until we will propagate through the networks all samples. The problem usually happens with the last set of samples. In our example we've used 1050 which is not divisible by 100 without remainder. The simplest solution is just to get final 50 samples and train the network.
+
+- Advantages:
+
+> It requires less memory. Since you train network using less number of samples the overall training procedure requires less memory. It's especially important in case if you are not able to fit dataset in memory. Typically networks trains faster with mini-batches. That's because we update weights after each propagation. In our example we've propagated 11 batches (10 of them had 100 samples and 1 had 50 samples) and after each of them we've updated network's parameters. If we used all samples during propagation we would make only 1 update for the network's parameter.
+
+- Disadvantages:
+
+> The smaller the batch the less accurate estimate of the gradient. In the figure below you can see that mini-batch (green color) gradient's direction fluctuates compare to the full batch (blue color).
+
+![Batch Graph](https://i.stack.imgur.com/lU3sx.png)

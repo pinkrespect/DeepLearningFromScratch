@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pylab as plt
 
 def sigmoid(x):
     return 1 / (1 + np.exp(-1))
@@ -13,8 +14,8 @@ print(1.0 + t)
 print(1.0 / t)
 '''sigmoid function도 넘파이 배열의 각 원소에 연산을 수행한 결과를 반환'''
 
-import matplotlib.pylab as plt
-#ValueError: x and y must have same first dimension, but have shapes (100,) and (1,)
+
+# ValueError: x and y must have same first dimension, but have shapes (100,) and (1,)
 z = np.arange(-5.0, 5.0, 0.1)
 y = sigmoid(z)
 plt.plot(z, y)
